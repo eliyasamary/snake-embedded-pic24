@@ -23,19 +23,17 @@ The game lasts 60 seconds, supports horizontal scrolling with a potentiometer, a
 
 ```
 snake-embedded-pic24/
-├─ README.md
-├─ docs/
-│  ├─ operating_instructions.pdf
-├─ firmware/
-│  └─ I2C_Accel_Driver.X/
-│     ├─ DemoAccel.c
-│     ├─ Accel_i2c.c / Accel_i2c.h
-│     ├─ oledDriver/
-│     ├─ i2cDriver/
-│     ├─ spiDriver/
-│     ├─ System/
-│     ├─ nbproject/
-│     └─ Makefile
+├─ System/                   # system init, ADC, timers, etc.
+├─ docs/                     # Operating_Instructions.pdf
+├─ i2cDriver/                # I²C low-level drivers
+├─ nbproject/                # MPLAB project files
+├─ oledDriver/               # OLED display drivers
+├─ spiDriver/                # SPI drivers
+├─ Accel_i2c.c               # accelerometer driver source
+├─ Accel_i2c.h               # accelerometer driver header
+├─ DemoAccel.c               # main game file
+├─ Makefile                  # MPLAB build script
+├─ README.md                 # project readme
 ```
 
 ## 🔧 Build & Flash
